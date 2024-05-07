@@ -21,6 +21,7 @@ fn query_value() {
         &mut app,
         contract_id,
         &sender,
+        None,
         "Counting contract",
         Coin::new(10u128, ATOM),
     )
@@ -42,6 +43,7 @@ fn donate() {
         &mut app,
         contract_id,
         &sender,
+        None,
         "Counting contract",
         Coin::new(10u128, ATOM),
     )
@@ -72,6 +74,7 @@ fn donate_with_funds() {
         &mut app,
         contract_id,
         &sender,
+        None,
         "Counting contract",
         Coin::new(10u128, ATOM),
     )
@@ -119,6 +122,7 @@ fn withdraw() {
         &mut app,
         contract_id,
         &owner,
+        None,
         "Counting contract",
         Coin::new(10u128, ATOM),
     )
@@ -159,6 +163,7 @@ fn unauthorized_withdraw() {
         &mut app,
         contract_id,
         &owner,
+        None,
         "Counting contract",
         Coin::new(10u128, ATOM),
     )
